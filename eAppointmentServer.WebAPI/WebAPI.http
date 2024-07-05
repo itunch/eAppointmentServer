@@ -1,0 +1,13 @@
+@eAppointmentServer.WebAPI_HostAddress = http://localhost:5250
+
+POST http://localhost:5250/api/Auth/Login
+Accept: application/json
+Content-Type: application/json
+
+{
+
+  "userNameOrEmail":"admin",
+  "password":"1"
+}
+
+###
