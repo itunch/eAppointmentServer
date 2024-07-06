@@ -7,12 +7,12 @@ using TS.Result;
 
 namespace eAppointmentServer.Application.Features.Doctors.CreateDoctor;
 
-internal sealed class CreateDoctorCommandHandler(
+internal sealed class CreateDoctorsCommandHandler(
     IDoctorRepository doctorRepository,
     IUnitOfWork unitOfWork,
-    IMapper mapper) : IRequestHandler<CreateDoctorCommand, Result<string>>
+    IMapper mapper) : IRequestHandler<CreateDoctorsCommand, Result<string>>
 {
-    public async Task<Result<string>> Handle(CreateDoctorCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(CreateDoctorsCommand request, CancellationToken cancellationToken)
     {
         Doctor doctors = mapper.Map<Doctor>(request);
         

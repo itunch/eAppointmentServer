@@ -4,7 +4,7 @@ using TS.Result;
 
 namespace eAppointmentServer.Application.Features.Doctors.CreateDoctor;
 
-public sealed record class CreateDoctorCommand(
+public sealed record class CreateDoctorsCommand(
     string FirstName,
     string LastName,
     int DepartmentValue,

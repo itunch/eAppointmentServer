@@ -22,7 +22,7 @@ namespace eAppointmentServer.WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateDoctorCommand request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Create(CreateDoctorsCommand request, CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(request, cancellationToken);
             return StatusCode(response.StatusCode, response);

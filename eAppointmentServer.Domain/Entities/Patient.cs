@@ -19,6 +19,6 @@ namespace eAppointmentServer.Domain.Entities
         public string IdentityNumber { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
         public string Town { get; set; } = string.Empty;
-        public string FullAdress { get; set; } = string.Empty;
+        public string FullAddress { get; set; } = string.Empty;
     }
 }
